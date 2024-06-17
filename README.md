@@ -62,6 +62,7 @@ index.php contains all front-end code to interact with the API, including the Ja
 
 api.php is the Endpoint for the API.
 
+### How it works
 'API_KEY' must be passed via the url. 
 
 Each API key is linked to a Company via the 'api_keys' and 'vendors' Tables. 
