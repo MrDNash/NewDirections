@@ -53,6 +53,9 @@ applicants (
 )
 ```
 ### Files:
+
+connectPSQL.php contains Auth details to connect to PSQL database.
+
 index.php contains all front-end code, including the Javascript.
 
 api.php is the Endpoint for the API.
