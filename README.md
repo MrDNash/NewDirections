@@ -19,6 +19,7 @@ Back-end focus: Using the sample dataset, build an API that can be used by front
 Front-end focus: Use the API to build a front-end application to present this dataset in a searchable manner to end users 
 
 ## FRONT END LIVE DEMO: 
+![image](https://github.com/MrDNash/NewDirections/assets/144225516/5f28407b-2644-43d9-a04f-695381a499c3)
 https://3dmintlab.com
 
 ## Notes:
