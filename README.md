@@ -20,7 +20,8 @@ Front-end focus: Use the API to build a front-end application to present this da
 
 ## FRONT END LIVE DEMO: 
 ![image](https://github.com/MrDNash/NewDirections/assets/144225516/5f28407b-2644-43d9-a04f-695381a499c3)
-https://3dmintlab.com
+
+You can view a live demo here https://3dmintlab.com
 
 ## Notes:
 
