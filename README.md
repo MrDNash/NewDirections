@@ -56,7 +56,9 @@ applicants (
 
 connectPSQL.php contains Auth details to connect to PSQL database.
 
-index.php contains all front-end code, including the Javascript.
+jobs.pgsql contains a dump of the PSQL database.
+
+index.php contains all front-end code to interact with the API, including the Javascript.
 
 api.php is the Endpoint for the API.
 
