@@ -54,6 +54,7 @@ applicants (
 ```
 ### Files:
 index.php contains all front-end code, including the Javascript.
+
 api.php is the Endpoint for the API.
 
 'API_KEY' must be passed via the url. 
@@ -67,15 +68,18 @@ Multiple API Keys can be given out and managed for each company.
 An Admin API key is present to allow searching for all Applicants for all companies.
 
 The endpoint also has the following optional paramaters to filter results.
-
+```
 'county' | Varchar
 'dbsRequired' | Boolean
 'appliedFor' | Varchar
+```
 
 ### API Examples
+```
 Bad Key Example: https://3dmintlab.com/api.php?API-KEY=WRONGKEY
 
 Admin Example: https://3dmintlab.com/api.php?API-KEY=MASTERKEY001&county=0&appliedFor=Kitten+Cuddler&dbsRequired=False
 
 New Directions company Example: https://3dmintlab.com/api.php?API-KEY=NEWDIRECTIONS_KEY001&county=0&appliedFor=0&dbsRequired=True
 
+```
