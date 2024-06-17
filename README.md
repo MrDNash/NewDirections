@@ -27,29 +27,29 @@ https://3dmintlab.com
 To allow for easy data manipulation and in the interest of building a scaleable solution, the data has been inserted into a PostGreSQL database (jobs.pgsql) with the following tables:
 
 vendors (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL UNIQUE
+ id SERIAL PRIMARY KEY,
+ name VARCHAR(255) NOT NULL UNIQUE
 )
 
 api_keys (
-    id SERIAL PRIMARY KEY,
-    vendor_id INT REFERENCES vendors(id),
-    api_key VARCHAR(255) NOT NULL UNIQUE
+ id SERIAL PRIMARY KEY,
+ vendor_id INT REFERENCES vendors(id),
+ api_key VARCHAR(255) NOT NULL UNIQUE
 )
 
 applicants (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    email VARCHAR(255),
-    phone VARCHAR(50),
-    vendor_id INT REFERENCES vendors(id),
-    address1 TEXT,
-    county VARCHAR(255),
-    country VARCHAR(255),
-    post_code VARCHAR(50),
-    require_dbs_check BOOLEAN,
-    applied_for VARCHAR(255),
-    cv TEXT
+ id SERIAL PRIMARY KEY,
+ name VARCHAR(255),
+ email VARCHAR(255),
+ phone VARCHAR(50),
+ vendor_id INT REFERENCES vendors(id),
+ address1 TEXT,
+ county VARCHAR(255),
+ country VARCHAR(255),
+ post_code VARCHAR(50),
+ require_dbs_check BOOLEAN,
+ applied_for VARCHAR(255),
+ cv TEXT
 )
 
 ### Files:
@@ -72,8 +72,7 @@ The endpoint also has the following optional paramaters to filter results.
 'dbsRequired' | Boolean
 'appliedFor' | Varchar
 
+### API Examples
 Bad Key Example: https://3dmintlab.com/api.php?API-KEY=WRONGKEY
-
 Admin Example: https://3dmintlab.com/api.php?API-KEY=MASTERKEY001&county=0&appliedFor=Kitten+Cuddler&dbsRequired=False
-
 New Directions company Example: https://3dmintlab.com/api.php?API-KEY=NEWDIRECTIONS_KEY001&county=0&appliedFor=0&dbsRequired=True
