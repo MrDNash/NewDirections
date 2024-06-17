@@ -75,11 +75,8 @@ The endpoint also has the following optional paramaters to filter results.
 ```
 
 ### API Examples
-```
 Bad Key Example: https://3dmintlab.com/api.php?API-KEY=WRONGKEY
 
 Admin Example: https://3dmintlab.com/api.php?API-KEY=MASTERKEY001&county=0&appliedFor=Kitten+Cuddler&dbsRequired=False
 
 New Directions company Example: https://3dmintlab.com/api.php?API-KEY=NEWDIRECTIONS_KEY001&county=0&appliedFor=0&dbsRequired=True
-
-```
